@@ -113,28 +113,6 @@ div p a:hover{
 
 }
 /*************** General. Le Début De Vue Bureau pour toutes les pages*************************/
-main>nav{
-
-	min-width: 25%;
-	margin-right: 1%;
-}
-
-main>nav>ol>li{
-	border-bottom: 1px solid #AAD5DF;
-	list-style-type: none;
-
-}
-
-main>nav ul>li{
-	list-style-type: none;
-	
-}
-
-main>nav>ol li:hover{
-	background-color: #AAD5DF;
-	cursor: pointer;
-	color: #fff;
-}
 
 h3, h4{
 	color: #AAD5DF;
@@ -319,6 +297,34 @@ main>section>a:hover{
 /**************la Fin de Page Acceuil******************/
 
 /***************Le Debut de footer De Vue Bureau Pour Meuble*************************/
+
+#Meuble>nav{
+
+	min-width: 25%;
+	margin-right: 1%;
+}
+
+#Meuble>nav>ol li:nth-of-type(3n+2), #Meuble li:nth-of-type(3), #Meuble li:nth-of-type(6), #Meuble li:nth-of-type(7) {
+	border: none;
+}
+
+#Meuble>nav>ol>li{
+	border-bottom: 1px solid #AAD5DF;
+	list-style-type: none;
+
+}
+
+#Meuble>nav>ol li:hover{
+	background-color: #AAD5DF;
+	cursor: pointer;
+	color: #fff;
+}
+#Meuble>nav ul>li{
+	list-style-type: none;
+	
+}
+
+
 
 #Meuble section a article{
 	position: relative;	
@@ -864,8 +870,8 @@ textarea{
 		flex-basis: 100%;
 		margin-bottom: -3rem
 	}
-	#Bombay>section div, #Kima>section{
-		max-width: 100%
+	#Bombay>section div, #Kima>section div{
+		max-width: 100%;
 		margin: auto;
 	}
 	.big{ /*la grand image dans la page detail*/
