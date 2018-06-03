@@ -1,0 +1,936 @@
+/************Géniral***********/
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	margin: 0px;
+	font-size: 16px;
+	font-family:  "Times New Roman", Times, serif;
+}
+
+body{
+	max-width: 100%;
+	margin: 0px;
+}
+
+/*Ici toutes les pages participent aves mêmes header !*/
+header{
+	max-width: 100%;
+	margin: auto;
+}
+
+header>div:first-child>article{
+	max-width: 64rem;
+	margin: auto;
+    margin-bottom: 2rem;  
+	clear: both;
+}
+
+header>div:first-child{
+	margin-top: 2rem;	
+	border-bottom: 1px solid #67B9D7;
+	top: 0;
+	width: 100%;
+}
+
+header>div:first-child form{
+	float: right; /*utiliser le float une seul fois !*/
+}
+
+header>div:first-child>article>form>input:nth-child(2){
+	background-color:  #AAD5DF;
+	border:1px solid #AAD5DF;
+	padding: 0.15rem 0.3rem;
+	color: #fff;
+	cursor: pointer;
+}
+
+header>div:nth-of-type(2){
+	margin-top: 2rem;
+	min-height: 3rem;
+}
+
+header>div:nth-of-type(2) ul{
+	max-width: 100%;
+	text-align: center;
+}
+
+header>div:nth-of-type(2) ul>li{
+	list-style-type: none;
+	display: inline-block;
+	min-width: 11%;
+	margin: 0rem 1rem;
+	font-size: small;
+}
+
+header>div:nth-of-type(2) ul>li:hover {
+	border-bottom: 2px solid #A38A7C;
+	cursor: pointer;
+}
+
+header>div:nth-of-type(3) ul>li{
+	list-style-type: none;
+}
+
+header>div:nth-of-type(3){
+	background-color: #AAD5DF;
+	min-height: 3.5rem;
+	padding-top: 1rem;
+}
+
+header>div:nth-of-type(3)>p{
+	max-width: 64rem;
+	margin: auto;
+	color: #fff;
+	
+}
+/*le style pour des liens pour le nav*/
+a{
+	text-decoration: none;
+	color: #000;
+
+}
+
+a:hover{
+	cursor: pointer;
+	
+}
+
+div p a:hover{
+	text-decoration: underline;
+	color: #940C0C;
+}
+
+/* un main pour les differents pages Meubles et détails et Contact*/
+
+#Bombay, #Kima, #Meuble, #Contact{
+	max-width: 64rem;
+	margin: 2rem auto;
+	display: flex;
+	flex-basis: calc((100% / 2) - 0.4rem);
+
+}
+/*************** General. Le Début De Vue Bureau pour toutes les pages*************************/
+main>nav{
+
+	min-width: 25%;
+	margin-right: 1%;
+}
+
+main>nav>ol>li{
+	border-bottom: 1px solid #AAD5DF;
+	list-style-type: none;
+
+}
+
+main>nav ul>li{
+	list-style-type: none;
+	
+}
+
+main>nav>ol li:hover{
+	background-color: #AAD5DF;
+	cursor: pointer;
+	color: #fff;
+}
+
+h3, h4{
+	color: #AAD5DF;
+}
+
+main>section{	
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10rem;
+}
+
+main>section>a{	
+	flex-basis:  calc(93.5% / 3);/*trois catalogues*/
+	flex-grow: 0;
+    flex-shrink: 0;
+    padding: 1%;
+    margin: 1%;
+    border: 1px dotted #A38A7C;
+}
+
+main>section>a>article>img{
+	max-width: 100%;
+}
+
+main>section>a:hover{
+	box-shadow: 2px 2px 4px 2px #552a20;
+	cursor: pointer;
+}
+
+/*********************** Le fin de General pour toutes les pages *******************************/
+
+/*************le Début de  page Acceuil**********/
+
+/************** des modification pour le header d'acceuil**************/
+#header_acceuil>div:first-child{
+	position: static;
+	margin-bottom: 2rem;
+}
+
+#header_acceuil div:nth-child(2){
+	margin-top: 2rem;
+}
+
+/***************Pour le body d'acceuil****************/
+#Acceuil>section{
+	margin-bottom: 0rem;
+}
+
+#Acceuil>section:first-of-type{
+	max-height: 25rem;
+}
+#Acceuil>section img{ /*pour les images de acceuil general*/
+ 	max-width: 100%;
+}
+
+#Acceuil section:nth-of-type(2){
+	max-width: 64rem;
+	margin: 0rem auto;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#Acceuil section:nth-of-type(2) article:first-child{
+	max-width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#Acceuil section:nth-of-type(2) article:nth-child(2){
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 22%;
+	margin-left: 2%;
+	position: relative;
+}
+/***********des largeurs pour les images***************/
+#Acceuil section:nth-of-type(2) article:first-child .acc_small_pho{
+	max-width: 30%;
+	margin-top: 1rem;
+}
+
+#Acceuil section:nth-of-type(2) article:nth-child(2) .acc_small_pho{
+	max-height: 10rem;
+	margin-top: 2rem;
+}
+/*des texts*/
+#Acceuil section:nth-of-type(2) article:nth-child(2) p{
+	margin-top: 0rem;
+	color: #986060;
+}
+
+#Acceuil section:nth-of-type(2) article:nth-child(2) h2{
+	margin: 0rem;
+}
+
+#Acceuil section:nth-of-type(2) article:nth-child(2) div{
+	background-color: #fff;
+	position: absolute;
+	bottom: 2%;
+	right: 5%
+}
+
+#Acceuil section:nth-of-type(2) article:nth-child(2) img:nth-child(4){
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+}
+/***********************le footer ne vas pas, je l'ai arreté en html
+/*j'ai ajouter de footer en utilisant flex!*/
+#Acceuil footer{
+	display: flex;
+	border-top: 0.5rem solid #AAD5DF;
+}
+
+#Acceuil footer div:nth-of-type(2){
+	border-left: 0.1rem solid #AAD5DF;
+	margin-left: 2rem;
+	margin-top: 1rem;
+	padding-left: 0.5rem;
+	position: absolute;
+	right: 0%;
+}
+
+#Acceuil footer div{
+	display: flex;
+}
+
+#Acceuil footer div:first-child{
+	border-right: 0.1rem solid #AAD5DF;
+	margin-right: 2rem;
+	margin-top: 1rem;
+	padding-right: 0.5rem;
+	position:fixed;
+	bottom: 0%;
+	left: 0%;
+}
+
+#Acceuil footer div p{
+	font-family: 'CaviarDreamsRegular', cursive;
+	font-weight: normal;
+	margin: 2.5rem 0rem 0rem 2rem;
+}
+/****************les icones pour le footer que j'ai arreté en html***********************/
+/****************** Style pour les icons general toutes kes page***********/
+.fa {
+    padding: 0.5rem;
+    width: 2rem;
+    text-align: center;
+    text-decoration: none;
+    border: 0.1rem solid #000;
+    border-radius: 50%;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    transform: skew(20deg);
+    transform: scale(1.5);
+    background-color: #fff;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/**************la Fin de Page Acceuil******************/
+
+/***************Le Debut de footer De Vue Bureau Pour Meuble*************************/
+
+#Meuble section a article{
+	position: relative;	
+	min-height: 29rem;
+}
+
+#Meuble section a article div p{
+	max-width: 15%;
+	margin-left: 80%;
+}
+#Meuble section a article div{
+	background-color: #AAD5DF;
+
+ 	position: absolute;
+    width: 200px;
+    bottom: 0px;
+    left:-10px;
+    transition: all 2s;
+    opacity: 0;
+}
+
+#Meuble section a article div:hover {	
+	left: 12px;
+	opacity: 1;
+}
+
+/************************un footer pour meuble***************************************/
+#Meuble footer{
+	display: flex; /*j'ai arreté la balise footer en html*/
+}
+
+#Meuble footer div:nth-of-type(2){
+	border-left: 0.1rem solid #AAD5DF;
+	margin-left: 2rem;
+	margin-top: 1rem;
+	padding-left: 0.5rem;
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+}
+
+#Meuble footer div{
+	display: flex;
+}
+
+#Meuble footer div:first-child{
+	border-right: 0.1rem solid #AAD5DF;
+	margin-right: 2rem;
+	margin-top: 1rem;
+	padding-right: 0.5rem;
+	position:fixed;
+	bottom: 0%;
+	left: 0%;
+}
+
+#Meuble footer div p{
+	font-family: 'CaviarDreamsRegular', cursive;
+	font-weight: normal;
+	margin: 2.5rem 0rem 0rem 2rem;
+
+}
+
+#Meuble footer div h3{
+	font-family: 'Pacifico', cursive;
+	font-weight: 600;
+}
+
+
+/***************Le Fin De Vue Bureau Pour Meuble*************************/
+
+/***Le Début De Vue Bureau Pour Détails***/
+
+/*la page détails dans un id*/
+#Bombay, #Kima{
+	max-width: 50rem;
+}
+/*les sections*/
+#Bombay section, #Kima section{
+	padding-bottom: 5rem;
+	margin-bottom: 5rem;
+}
+
+/*le div qui contien les photos des détails*/
+.photo{ 
+	max-width: 40%;
+	margin-right: 1rem;
+}
+/*les petites tailles de photos de détails*/
+.small{
+	max-width: 3.25rem;
+}
+.photo img:nth-child(2){
+	margin-left: 0.2rem
+}
+/*Ici le dive qui contien les paragraphes et les titres*/
+.text{
+	max-width: 55%;
+}
+/*Un div sur le prix de cataloges*/
+.prix{
+	background-color: #AAD5DF;
+	color: #fff;
+	max-width: 8rem;
+}
+/*Le paragraphe qui a les discription sur l'articles*/
+.discription{
+	max-width: 28rem;
+}
+
+
+/*le style pour footer detail*/
+#Bombay footer, #Kima footer{ /* j'ai arreté le balise footer en html*/
+	display: flex;
+}
+
+#Bombay footer div:nth-of-type(2), #Kima footer div:nth-of-type(2){
+	border-left: 0.1rem solid #AAD5DF;
+	margin-left: 2rem;
+	margin-top: 1rem;
+	padding-left: 0.5rem;
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+}
+
+#Bombay footer div, #Kima footer div{
+	display: flex;
+}
+#Bombay footer div:first-child, #Kima footer div:first-child{
+	border-right: 0.1rem solid #AAD5DF;
+	margin-right: 2rem;
+	margin-top: 1rem;
+	padding-right: 0.5rem;
+	position:fixed;
+	bottom: 0%;
+	left: 0%;
+}
+
+#Bombay footer div p, #Kima footer div p{
+	font-family: 'CaviarDreamsRegular', cursive;
+	font-weight: normal;
+	margin: 2.5rem 0rem 0rem 2rem;
+
+}
+
+#Bombay footer div h3, #Kima footer div h3{
+	font-family: 'Pacifico', cursive;
+	font-weight: 600;
+}
+
+/***Le Fin De Vue Bureau Pour Détails***/
+
+/****************************************************/
+
+/***Le Début De Vue Bureau Pour Contact***/
+
+/*un id pour la page Contact*/
+#Contact{/*id contact*/
+	display: block;
+	margin-top: 0rem;
+}
+
+#Contact>section:first-child{
+	min-width: 100%;
+	margin-bottom: 1rem;
+}
+
+iframe{/*Google map la location de l'adresse*/
+	min-width: 100%;
+	min-height: 15rem;
+}
+
+#Contact>section:nth-child(2){
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 10rem
+}
+
+.info{ /*les infos nom de tel et l'adresse ...*/
+	min-width: 25%;
+	margin-right: 1rem;
+	background-color: #AAD5DF;
+}
+.formulaire{ /*duv parent de formulaires pour Contact*/
+	background-color: #AAD5DF; 
+}
+
+.formulaire>form{
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 100%
+}
+
+.formulaire form{ /*un div sur les formulaires le nom et prenom et e-mail ...*/
+	margin: 2%;
+}
+
+textarea{
+	min-width: 100%;
+	min-height: 115%;
+	border:1px solid #fff;
+}
+
+.info>p:last-child{
+	padding: 0.1rem 5rem 0.1rem 1rem;
+	font-size: medium;
+}
+
+.formulaire label:nth-of-type(4){
+	font-size: small;
+	margin-left: 3rem;
+}
+
+.formulaire form>div{
+	min-width: 50%;
+}
+.formulaire form>div input:nth-of-type(-n+3){
+	min-width: 75%;
+	min-height: 2rem;
+	border: 1px solid #fff;
+}
+
+.formulaire form>div input:nth-of-type(4){
+	margin-left: 4rem;
+}
+
+
+.formulaire input:last-child:hover, .formulaire form>div label:last-of-type:hover{
+	color: #f00;
+	cursor: pointer;
+}
+
+.formulaire input:first-of-type{
+	margin-left: 1.172rem;
+}
+
+.formulaire input:nth-of-type(3){
+	margin-left: 0.5rem;
+} 
+
+.info>p:first-child, .formulaire>p:first-child{
+	font-weight: 100;
+	font-size: x-large;
+	margin-top: 0rem;
+	padding: 0.3rem 0.2rem;
+	background-color: #DDE4E6;
+}
+
+.formulaire{
+	min-width: 72.4%;
+}
+.formulaire input:last-child{
+	margin-left: 35%;
+	padding: 0.4rem;
+	background-color: #fff;
+	color: #5CA4B5;
+	border:1px solid #AAD5DF;
+	font-size: small;
+}
+
+
+/*le footer d'acceuil*/
+#Contact footer{/*j'ai arreté la balise footer en html*/
+	display: flex;
+	border-top: 0.5rem solid #AAD5DF;
+	margin-bottom: 5.5rem;
+}
+
+#Contact footer div:nth-of-type(2){
+	border-left: 0.1rem solid #AAD5DF;
+	margin-left: 2rem;
+	margin-top: 1rem;
+	padding-left: 0.5rem;
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+}
+
+#Contact footer div{
+	display: flex;
+}
+#Contact footer div:first-child{
+	border-right: 0.1rem solid #AAD5DF;
+	margin-right: 2rem;
+	margin-top: 1rem;
+	padding-right: 0.5rem;
+	position:fixed;
+	bottom: 0%;
+	left: 0%;
+}
+#Contact footer div p{
+	font-family: 'CaviarDreamsRegular', cursive;
+	font-weight: normal;
+	margin: 2.5rem 0rem 0rem 2rem;
+
+}
+#Contact footer div h3{
+	font-family: 'Pacifico', cursive;
+	font-weight: 600;
+}
+/***Le Fin De Vue Bureau Pour Contact***/
+
+/***************Le Fin De Vue Bureau*************************/
+
+/***************Le Début De Vue Tablette*************************/
+@media (max-width: 860px) {
+
+/********Vue Tablette Acceuil*********/
+	#Acceuil section:nth-of-type(2) article:nth-child(2) img:nth-child(4){
+		position: relative;
+		min-width: 11rem
+	}
+/**************************footer acceuil***********************/
+	#Acceuil footer>div{/*j'ai arreté la balise footer en html*/
+		padding-bottom: 1rem;
+	}
+	#Acceuil footer div:nth-of-type(2){
+		display: block;
+		max-height: 91.2px;	
+	}
+	#Acceuil footer div:nth-of-type(2) p{
+		font-size: 0.8rem;
+		margin-top: 0rem;
+	}
+	#Acceuil footer div:nth-of-type(2) h3{
+		margin-bottom: 0.5rem;
+	}
+
+/********Vue Tablette Meuble*********/
+	
+	main>section>a{
+	
+	flex-basis:  calc(93.5% / 2);
+
+	}
+	header div{
+			padding: 0rem 1rem;
+	}
+/***************footer meuble***********************************/
+	#Meuble footer>div{
+		padding-bottom: 1rem;/*j'ai arreté la balise footer en html*/
+	}
+	#Meuble footer div:nth-of-type(2){
+		display: block;	
+		max-height: 91.2px;
+	}
+	#Meuble footer div:nth-of-type(2) p{
+		font-size: 0.8rem;
+		margin-top: 0rem;
+	}
+	#Meuble footer div:nth-of-type(2) h3{
+		margin-bottom: 0.5rem;
+	}
+
+/********Vue Tablette Contact*********/
+	#Contact>section:nth-child(2){
+		flex-wrap: wrap;
+	}
+	.info, .formulaire{/*les infos adresse, tel ..., et le formulair*/
+		min-width: 100%;
+		margin: auto;
+		margin-bottom: 1rem;
+	}
+
+	.info p:last-child{
+		min-height: 5rem;
+		font-size: 1.3rem ;	
+	}
+
+	.formulaire form{/*un class pour la div parents  formulaie*/
+		display: flex;
+	}
+	.formulaire textarea{
+		flex: 1;
+	}
+    /************** footer acceuil***********************/
+	#Contact footer>div{
+		padding-bottom: 1rem;
+	}
+	#Contact footer div:nth-of-type(2){
+		display: block;	
+		max-height: 91.2px;
+	}
+	#Contact footer div:nth-of-type(2) p{
+		font-size: 0.8rem;
+		margin-top: 0rem;
+	}
+	#Contact footer div:nth-of-type(2) h3{
+		margin-bottom: 0.5rem;
+	}
+/*********la vue tablette detail reste la meme que bureau*************/
+/********Vue Tablette Bombay*********/
+/**********footer detail kima bombay*********/
+	#Bombay footer>div, #Kima footer>div{ /*j'ai arreté la balise footer en html*/
+		padding-bottom: 1rem;
+	}
+	#Bombay footer div:nth-of-type(2), #Kima footer div:nth-of-type(2){
+		display: block;	
+		max-height: 91.2px;
+	}
+	#Bombay footer div:nth-of-type(2) p, #Kima footer div:nth-of-type(2) p{
+		font-size: 0.8rem;
+		margin-top: 0rem;
+	}
+	#Bombay footer div:nth-of-type(2) h3, #Kima footer div:nth-of-type(2) h3{
+		margin-bottom: 0.5rem;
+	}
+
+}
+
+/***************Le Fin De Vue Tablette*************************/
+
+
+/***************Le Début De Vue Mobile*************************/
+@media(max-width: 620px){
+
+/*********general header vue Mobile pour toutes les pages*******************/
+	header>div:first-child{
+		margin-top: 0rem;
+	}
+	header>div:first-child>article{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	header>div:first-child>article>img{
+		flex-basis: 100%;
+		margin:0.5rem 0rem;
+	}
+
+	header>div:nth-child(2), main>nav ul, main section a img{
+		display: none;
+	}
+	header>div:last-child{
+		margin-top: 1rem;
+	}
+
+/********Vue Mobile Acceuil*********/
+
+	#Acceuil section:first-child, #Acceuil section:nth-of-type(2){
+		margin-bottom: 4rem;
+	}
+
+/************************************/
+	#Acceuil footer{
+		display: block; /* j'ai arreté la balise footer en html*/
+	}
+	#Acceuil footer div:first-child{
+		display: block;
+		position: static;
+		max-height: 8rem;
+		border-right: none;
+	}
+	#Acceuil footer div:last-child{
+		position: static;
+		max-height: 8rem;
+		border-left: none;
+		margin-left: -0.5rem;
+	}
+
+/********Vue Mobile Meuble *********/
+
+	#Meuble>nav{
+		flex-basis: 100%;
+	}
+	
+	#Meuble>nav>ol{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -2.5rem;
+	
+	}
+	#Meuble>nav>ol>li{
+		flex-basis: 100%;
+	}
+	#Meuble{
+		display: flex;
+		flex-flow: wrap;
+		flex-basis: 100%;
+		margin: 0rem 0.5rem;
+
+	}
+	#Meuble section{
+		display: flex;
+		flex-flow: wrap;
+		flex-basis: 100%;
+		margin: 0rem 0.2rem 0rem -0.3rem
+	}
+	#Meuble section a{
+		flex-basis: 100%;	
+	}
+	#Meuble>section>a>article{
+		min-height: 8rem;
+	}
+	
+	#Meuble>section>a>article>div{
+		position: static;
+		opacity: 1;
+		min-width: 100%;
+		background-color: #AAD5DF;   
+	}
+	#Meuble>section>a>article>div:hover{
+
+	}
+	#Meuble section>a article div>p{
+		display: flex;
+		justify-content: flex-end;
+		color: #fff;
+	}
+
+	#Meuble>section>a:hover{
+		box-shadow: none;
+	}
+/**********************footer meuble********************************/
+	#Meuble footer{
+		display: block;  /*j'ai arreté la balise footer en html*/
+	}
+	#Meuble footer div:first-child{
+		display: block;
+		position: static;
+		max-height: 8rem;
+		border-right: none;
+	}
+	#Meuble footer div:last-child{
+		position: static;
+		max-height: 8rem;
+		border-left: none;
+		margin-left: -0.5rem;
+	}
+	#Meuble footer div h3{
+		border-bottom: 2px solid #AAD5DF;
+	}
+
+
+/********Vue Mobile Bombay et kime detail*********/
+	#Bombay, #Kima{
+		display: block; /*les deux pages details participent la meme style !*/
+	}
+	#Bombay>section, #Kima>section{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-basis: 100%;
+		margin-bottom: -3rem
+	}
+	#Bombay>section div, #Kima>section{
+		max-width: 100%
+		margin: auto;
+	}
+	.big{ /*la grand image dans la page detail*/
+		max-width: 100%;
+		display: block;
+	}
+
+	/*********************footer detail ******************************/
+	#Bombay footer, #Kima footer{ /*j'ai arreté la balise footer en html*/
+		display: block;
+	}
+	#Bombay footer div:first-child, #Kima footer div:first-child{
+		display: block;
+		position: static;
+		max-height: 8rem;
+		border-right: none;
+	}
+	#Bombay footer div:last-child, #Kima footer div:last-child{
+		position: static;
+		max-height: 8rem;
+		border-left: none;
+		margin-left: -0.5rem;
+	}
+
+/********Vue Mobile Contact*********/
+
+	#Contact iframe{
+		margin-left: -0.4rem;
+	}
+
+	.formulaire form div:first-child{ /* dans la page contact la div parents est en classe formulaire  */
+		min-width: 100%;
+		
+	}
+	.formulaire form div:nth-child(2){
+		margin: 1rem auto;
+		min-width: 100%;
+	}
+
+	.formulaire form>div label:nth-of-type(4){
+		margin-left: 0rem
+	}
+
+	.formulaire form input:last-child{
+		flex-grow: 0.5;
+		margin: auto;
+		
+	}
+/***********************footer contact****************************************/
+	#Contact footer{   /*j'ai arreté la balise footer en html*/
+		display: block;
+	}
+	#Contact footer div:first-child{
+		display: block;
+		position: static;
+		max-height: 8rem;
+		border-right: none;
+	}
+	#Contact footer div:last-child{
+		position: static;
+		max-height: 8rem;
+		border-left: none;
+		margin-left: -0.5rem;
+	}
+	
+}
+
+/***************Le Fin De Vue Mobile*************************/
