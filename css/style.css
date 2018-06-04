@@ -25,9 +25,9 @@ header{
 
 header>div:first-child>article{
 	max-width: 64rem; /*1024px*/
-	margin: auto;
-    margin-bottom: 2rem;  
-	clear: both;
+	margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 header>div:first-child{
@@ -35,10 +35,6 @@ header>div:first-child{
 	border-bottom: 1px solid #67B9D7;
 	top: 0;
 	width: 100%;
-}
-
-header>div:first-child form{
-	float: right; /*utiliser le float une seul fois !*/
 }
 
 header>div:first-child>article>form>input:nth-child(2){
@@ -54,6 +50,11 @@ header>div:nth-of-type(2){
 	min-height: 3rem;
 }
 
+header>div:nth-of-type(2)>nav{
+	max-width: 64rem;
+	margin: auto;
+}
+
 header>div:nth-of-type(2) ul{
 	max-width: 100%;
 	text-align: center;
@@ -62,8 +63,8 @@ header>div:nth-of-type(2) ul{
 header>div:nth-of-type(2) ul>li{
 	list-style-type: none;
 	display: inline-block;
-	min-width: 11%;
-	margin: 0rem 1rem;
+	min-width: 17%;
+	margin: 0rem ;
 	font-size: small;
 }
 
@@ -72,7 +73,7 @@ header>div:nth-of-type(2) ul>li:hover {
 	cursor: pointer;
 }
 
-header>div:nth-of-type(3) ul>li{
+header>div:nth-of-type(3) ul>li, #Acceuil article:last-child ul>li {
 	list-style-type: none;
 }
 
@@ -162,9 +163,11 @@ main>section>a:hover{
 #Acceuil>section{
 	margin-bottom: 0rem;
 }
-
+#Acceuil>section:first-child>img{
+	max-height: 25rem;
+}
 #Acceuil>section img{ /*pour les images de acceuil general*/
- 	max-width: 100%;
+ 	width: 100%;
 }
 
 #Acceuil section:nth-of-type(2){
@@ -186,7 +189,7 @@ main>section>a:hover{
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 22%;
-	margin-left: 2%;
+	margin-left: 3%;
 	position: relative;
 }
 /***********des largeurs pour les images***************/
@@ -213,13 +216,25 @@ main>section>a:hover{
 	background-color: #fff;
 	position: absolute;
 	bottom: 2%;
-	right: 5%
+	right: 5%;
+
+}
+
+#Acceuil section:nth-of-type(2) article:nth-child(2) ul{
+	margin-left: -1.5rem;
+	color: #A77474
+}
+#Acceuil section:nth-of-type(2) article:nth-child(2) li:before{
+	content: "-";
 }
 
 #Acceuil section:nth-of-type(2) article:nth-child(2) img:nth-child(4){
-	position: absolute;
+	/*position: absolute;
 	bottom: 0%;
-	right: 0%;
+	right: 0%;*/
+	justify-content: flex-end;
+	max-width: 7rem
+
 }
 /***********************le footer ne vas pas, je l'ai arreté en html
 /*j'ai ajouter de footer en utilisant flex!*/
@@ -636,11 +651,7 @@ textarea{
 /***************Le Début De Vue Tablette*************************/
 @media (max-width: 860px) {
 
-/********Vue Tablette Acceuil*********/
-	#Acceuil section:nth-of-type(2) article:nth-child(2) img:nth-child(4){
-		position: relative;
-		min-width: 11rem
-	}
+
 /**************************footer acceuil***********************/
 	#Acceuil footer>div{/*j'ai arreté la balise footer en html*/
 		padding-bottom: 1rem;
