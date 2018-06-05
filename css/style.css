@@ -24,7 +24,7 @@ header{
 }
 
 header>div:first-child>article{
-	max-width: 64rem; /*1024px*/
+	max-width: 64rem; /*1024px vue bureau*/
 	margin: 2rem auto;
     display: flex;
     justify-content: space-between;
@@ -68,7 +68,7 @@ header>div:nth-of-type(2) ul>li{
 	font-size: small;
 }
 
-header>div:nth-of-type(2) ul>li:hover {
+header>div:nth-of-type(2) ul>li:hover{
 	border-bottom: 2px solid #A38A7C;
 	cursor: pointer;
 }
@@ -89,7 +89,7 @@ header>div:nth-of-type(3)>p{
 	color: #fff;
 	
 }
-/*le style pour des liens pour le nav*/
+/*le style des liens pour le nav*/
 a{
 	text-decoration: none;
 	color: #000;
@@ -117,7 +117,7 @@ div p a:hover{
 }
 /*************** General. Le Début De Vue Bureau pour toutes les pages*************************/
 
-h3, h4{
+#Meuble h2, h3{
 	color: #AAD5DF;
 }
 
@@ -149,15 +149,6 @@ main>section>a:hover{
 
 /*************le Début de  page Acceuil**********/
 
-/************** des modification pour le header d'acceuil**************/
-#header_acceuil>div:first-child{
-	position: static;
-	margin-bottom: 2rem;
-}
-
-#header_acceuil div:nth-child(2){
-	margin-top: 2rem;
-}
 
 /***************Pour le body d'acceuil****************/
 #Acceuil>section{
@@ -217,7 +208,6 @@ main>section>a:hover{
 	position: absolute;
 	bottom: 2%;
 	right: 5%;
-
 }
 
 #Acceuil section:nth-of-type(2) article:nth-child(2) ul{
@@ -229,83 +219,9 @@ main>section>a:hover{
 }
 
 #Acceuil section:nth-of-type(2) article:nth-child(2) img:nth-child(4){
-	/*position: absolute;
-	bottom: 0%;
-	right: 0%;*/
 	justify-content: flex-end;
 	max-width: 7rem
 
-}
-/***********************le footer ne vas pas, je l'ai arreté en html
-/*j'ai ajouter de footer en utilisant flex!*/
-#Acceuil footer{
-	display: flex;
-	border-top: 0.5rem solid #AAD5DF;
-}
-
-#Acceuil footer div:nth-of-type(2){
-	border-left: 0.1rem solid #AAD5DF;
-	margin-left: 2rem;
-	margin-top: 1rem;
-	padding-left: 0.5rem;
-	position: absolute;
-	right: 0%;
-}
-
-#Acceuil footer div{
-	display: flex;
-}
-
-#Acceuil footer div:first-child{
-	border-right: 0.1rem solid #AAD5DF;
-	margin-right: 2rem;
-	margin-top: 1rem;
-	padding-right: 0.5rem;
-	position:fixed;
-	bottom: 0%;
-	left: 0%;
-}
-
-#Acceuil footer div p{
-	font-family: 'CaviarDreamsRegular', cursive;
-	font-weight: normal;
-	margin: 2.5rem 0rem 0rem 2rem;
-}
-/****************les icones pour le footer que j'ai arreté en html***********************/
-/****************** Style pour les icons general toutes kes page***********/
-.fa {
-    padding: 0.5rem;
-    width: 2rem;
-    text-align: center;
-    text-decoration: none;
-    border: 0.1rem solid #000;
-    border-radius: 50%;
-    -webkit-transition: 1s;
-    transition: 1s;
-}
-
-.fa:hover {
-    opacity: 0.7;
-    transform: skew(20deg);
-    transform: scale(1.5);
-    background-color: #fff;
-}
-
-/* Facebook */
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
 }
 
 /**************la Fin de Page Acceuil******************/
@@ -313,7 +229,6 @@ main>section>a:hover{
 /***************Le Debut de footer De Vue Bureau Pour Meuble*************************/
 
 #Meuble>nav{
-
 	min-width: 25%;
 	margin-right: 1%;
 }
@@ -325,7 +240,6 @@ main>section>a:hover{
 #Meuble>nav>ol>li{
 	border-bottom: 1px solid #AAD5DF;
 	list-style-type: none;
-
 }
 
 #Meuble>nav>ol li:hover{
@@ -334,15 +248,12 @@ main>section>a:hover{
 	color: #fff;
 }
 #Meuble>nav ul>li{
-	list-style-type: none;
-	
+	list-style-type: none;	
 }
-
-
 
 #Meuble section a article{
 	position: relative;	
-	min-height: 29rem;
+	min-height: 30rem;
 }
 
 #Meuble section a article div p{
@@ -351,7 +262,6 @@ main>section>a:hover{
 }
 #Meuble section a article div{
 	background-color: #AAD5DF;
-
  	position: absolute;
     width: 200px;
     bottom: 0px;
@@ -364,48 +274,6 @@ main>section>a:hover{
 	left: 12px;
 	opacity: 1;
 }
-
-/************************un footer pour meuble***************************************/
-#Meuble footer{
-	display: flex; /*j'ai arreté la balise footer en html*/
-}
-
-#Meuble footer div:nth-of-type(2){
-	border-left: 0.1rem solid #AAD5DF;
-	margin-left: 2rem;
-	margin-top: 1rem;
-	padding-left: 0.5rem;
-	position: fixed;
-	bottom: 0%;
-	right: 0%;
-}
-
-#Meuble footer div{
-	display: flex;
-}
-
-#Meuble footer div:first-child{
-	border-right: 0.1rem solid #AAD5DF;
-	margin-right: 2rem;
-	margin-top: 1rem;
-	padding-right: 0.5rem;
-	position:fixed;
-	bottom: 0%;
-	left: 0%;
-}
-
-#Meuble footer div p{
-	font-family: 'CaviarDreamsRegular', cursive;
-	font-weight: normal;
-	margin: 2.5rem 0rem 0rem 2rem;
-
-}
-
-#Meuble footer div h3{
-	font-family: 'Pacifico', cursive;
-	font-weight: 600;
-}
-
 
 /***************Le Fin De Vue Bureau Pour Meuble*************************/
 
@@ -442,7 +310,8 @@ main>section>a:hover{
 }
 /*Un div sur le prix de cataloges*/
 #Kima>section>div:nth-child(2) p:nth-of-type(2), #Bombay>section>div:nth-child(2) p:nth-of-type(2){
-	font-size: 25px;
+	font-size: 22px;
+	min-width: 50%;
 	background-color: #AAD5DF;
 	color: #fff;
 	max-width: 8rem;
@@ -453,46 +322,6 @@ main>section>a:hover{
 	font-size: 20px
 }
 
-
-/*le style pour footer detail*/
-#Bombay footer, #Kima footer{ /* j'ai arreté le balise footer en html*/
-	display: flex;
-}
-
-#Bombay footer div:nth-of-type(2), #Kima footer div:nth-of-type(2){
-	border-left: 0.1rem solid #AAD5DF;
-	margin-left: 2rem;
-	margin-top: 1rem;
-	padding-left: 0.5rem;
-	position: fixed;
-	bottom: 0%;
-	right: 0%;
-}
-
-#Bombay footer div, #Kima footer div{
-	display: flex;
-}
-#Bombay footer div:first-child, #Kima footer div:first-child{
-	border-right: 0.1rem solid #AAD5DF;
-	margin-right: 2rem;
-	margin-top: 1rem;
-	padding-right: 0.5rem;
-	position:fixed;
-	bottom: 0%;
-	left: 0%;
-}
-
-#Bombay footer div p, #Kima footer div p{
-	font-family: 'CaviarDreamsRegular', cursive;
-	font-weight: normal;
-	margin: 2.5rem 0rem 0rem 2rem;
-
-}
-
-#Bombay footer div h3, #Kima footer div h3{
-	font-family: 'Pacifico', cursive;
-	font-weight: 600;
-}
 
 /***Le Fin De Vue Bureau Pour Détails***/
 
@@ -604,69 +433,12 @@ textarea{
 	font-size: small;
 }
 
-
-/*le footer d'acceuil*/
-#Contact footer{/*j'ai arreté la balise footer en html*/
-	display: flex;
-	border-top: 0.5rem solid #AAD5DF;
-	margin-bottom: 5.5rem;
-}
-
-#Contact footer div:nth-of-type(2){
-	border-left: 0.1rem solid #AAD5DF;
-	margin-left: 2rem;
-	margin-top: 1rem;
-	padding-left: 0.5rem;
-	position: fixed;
-	bottom: 0%;
-	right: 0%;
-}
-
-#Contact footer div{
-	display: flex;
-}
-#Contact footer div:first-child{
-	border-right: 0.1rem solid #AAD5DF;
-	margin-right: 2rem;
-	margin-top: 1rem;
-	padding-right: 0.5rem;
-	position:fixed;
-	bottom: 0%;
-	left: 0%;
-}
-#Contact footer div p{
-	font-family: 'CaviarDreamsRegular', cursive;
-	font-weight: normal;
-	margin: 2.5rem 0rem 0rem 2rem;
-
-}
-#Contact footer div h3{
-	font-family: 'Pacifico', cursive;
-	font-weight: 600;
-}
 /***Le Fin De Vue Bureau Pour Contact***/
 
 /***************Le Fin De Vue Bureau*************************/
 
 /***************Le Début De Vue Tablette*************************/
 @media (max-width: 860px) {
-
-
-/**************************footer acceuil***********************/
-	#Acceuil footer>div{/*j'ai arreté la balise footer en html*/
-		padding-bottom: 1rem;
-	}
-	#Acceuil footer div:nth-of-type(2){
-		display: block;
-		max-height: 91.2px;	
-	}
-	#Acceuil footer div:nth-of-type(2) p{
-		font-size: 0.8rem;
-		margin-top: 0rem;
-	}
-	#Acceuil footer div:nth-of-type(2) h3{
-		margin-bottom: 0.5rem;
-	}
 
 /********Vue Tablette Meuble*********/
 	
@@ -677,21 +449,6 @@ textarea{
 	}
 	header div{
 			padding: 0rem 1rem;
-	}
-/***************footer meuble***********************************/
-	#Meuble footer>div{
-		padding-bottom: 1rem;/*j'ai arreté la balise footer en html*/
-	}
-	#Meuble footer div:nth-of-type(2){
-		display: block;	
-		max-height: 91.2px;
-	}
-	#Meuble footer div:nth-of-type(2) p{
-		font-size: 0.8rem;
-		margin-top: 0rem;
-	}
-	#Meuble footer div:nth-of-type(2) h3{
-		margin-bottom: 0.5rem;
 	}
 
 /********Vue Tablette Contact*********/
@@ -714,38 +471,6 @@ textarea{
 	}
 	.formulaire textarea{
 		flex: 1;
-	}
-    /************** footer acceuil***********************/
-	#Contact footer>div{
-		padding-bottom: 1rem;
-	}
-	#Contact footer div:nth-of-type(2){
-		display: block;	
-		max-height: 91.2px;
-	}
-	#Contact footer div:nth-of-type(2) p{
-		font-size: 0.8rem;
-		margin-top: 0rem;
-	}
-	#Contact footer div:nth-of-type(2) h3{
-		margin-bottom: 0.5rem;
-	}
-/*********la vue tablette detail reste la meme que bureau*************/
-/********Vue Tablette Bombay*********/
-/**********footer detail kima bombay*********/
-	#Bombay footer>div, #Kima footer>div{ /*j'ai arreté la balise footer en html*/
-		padding-bottom: 1rem;
-	}
-	#Bombay footer div:nth-of-type(2), #Kima footer div:nth-of-type(2){
-		display: block;	
-		max-height: 91.2px;
-	}
-	#Bombay footer div:nth-of-type(2) p, #Kima footer div:nth-of-type(2) p{
-		font-size: 0.8rem;
-		margin-top: 0rem;
-	}
-	#Bombay footer div:nth-of-type(2) h3, #Kima footer div:nth-of-type(2) h3{
-		margin-bottom: 0.5rem;
 	}
 
 }
@@ -784,21 +509,6 @@ textarea{
 	}
 
 /************************************/
-	#Acceuil footer{
-		display: block; /* j'ai arreté la balise footer en html*/
-	}
-	#Acceuil footer div:first-child{
-		display: block;
-		position: static;
-		max-height: 8rem;
-		border-right: none;
-	}
-	#Acceuil footer div:last-child{
-		position: static;
-		max-height: 8rem;
-		border-left: none;
-		margin-left: -0.5rem;
-	}
 
 /********Vue Mobile Meuble *********/
 
@@ -853,26 +563,6 @@ textarea{
 	#Meuble>section>a:hover{
 		box-shadow: none;
 	}
-/**********************footer meuble********************************/
-	#Meuble footer{
-		display: block;  /*j'ai arreté la balise footer en html*/
-	}
-	#Meuble footer div:first-child{
-		display: block;
-		position: static;
-		max-height: 8rem;
-		border-right: none;
-	}
-	#Meuble footer div:last-child{
-		position: static;
-		max-height: 8rem;
-		border-left: none;
-		margin-left: -0.5rem;
-	}
-	#Meuble footer div h3{
-		border-bottom: 2px solid #AAD5DF;
-	}
-
 
 /********Vue Mobile Bombay et kime detail*********/
 	#Bombay, #Kima{
@@ -892,23 +582,6 @@ textarea{
 	#Bombay>section div img:first-child, #Kima>section div img:first-child{ /*la grand image dans la page detail*/
 		max-width: 100%;
 		display: block;
-	}
-
-	/*********************footer detail ******************************/
-	#Bombay footer, #Kima footer{ /*j'ai arreté la balise footer en html*/
-		display: block;
-	}
-	#Bombay footer div:first-child, #Kima footer div:first-child{
-		display: block;
-		position: static;
-		max-height: 8rem;
-		border-right: none;
-	}
-	#Bombay footer div:last-child, #Kima footer div:last-child{
-		position: static;
-		max-height: 8rem;
-		border-left: none;
-		margin-left: -0.5rem;
 	}
 
 /********Vue Mobile Contact*********/
@@ -935,23 +608,5 @@ textarea{
 		margin: auto;
 		
 	}
-/***********************footer contact****************************************/
-	#Contact footer{   /*j'ai arreté la balise footer en html*/
-		display: block;
-	}
-	#Contact footer div:first-child{
-		display: block;
-		position: static;
-		max-height: 8rem;
-		border-right: none;
-	}
-	#Contact footer div:last-child{
-		position: static;
-		max-height: 8rem;
-		border-left: none;
-		margin-left: -0.5rem;
-	}
-	
-}
 
 /***************Le Fin De Vue Mobile*************************/
