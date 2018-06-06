@@ -286,12 +286,13 @@ main>section>a:hover{
 	min-width: 100%;
 	padding-bottom: 5rem;
 	margin-bottom: 5rem;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 /*le div qui contien les photos des détails*/
 #Kima>section>div:first-child, #Bombay>section>div:first-child{ 
-	min-width: 35%;
-	margin: auto;
+	flex-basis: 35%;
 }
 #Kima>section>div>img:first-child, #Bombay>section>div>img:first-child{
 	max-width: 100%;
@@ -302,25 +303,22 @@ main>section>a:hover{
 	max-width: 4rem;
 }
 #Kima>section>div:first-child img:nth-child(2), #Bombay>section>div:first-child img:nth-child(2){
-	margin-left: 0.2rem
+	margin-left: 0.5rem
 }
-/*Ici le dive qui contien les paragraphes et les titres*/
-#Kima>section>div:nth-child(2), #Bombay>section>div:nth-child(2){
-	min-width: 60%;
-}
+
 /*Un div sur le prix de cataloges*/
 #Kima>section>div:nth-child(2) p:nth-of-type(2), #Bombay>section>div:nth-child(2) p:nth-of-type(2){
-	font-size: 22px;
+	font-size: 20px;
 	min-width: 50%;
 	background-color: #AAD5DF;
 	color: #fff;
 	max-width: 8rem;
 }
-/*Le paragraphe qui a les discription sur l'articles*/
+
 #Kima>section>div:nth-child(2) p:first-of-type, #Bombay>section>div:nth-child(2) p:first-of-type{
 	max-width: 28rem;
-	font-size: 20px
 }
+
 
 
 /***Le Fin De Vue Bureau Pour Détails***/
@@ -443,13 +441,14 @@ textarea{
 /********Vue Tablette Meuble*********/
 	
 	main>section>a{
-	
-	flex-basis:  calc(93.5% / 2);
+		flex-basis:  calc(93.5% / 2);
 
 	}
 	header div{
-			padding: 0rem 1rem;
+		padding: 0rem 1rem;
 	}
+
+/****************vue detail**************/
 
 /********Vue Tablette Contact*********/
 	#Contact>section:nth-child(2){
@@ -573,15 +572,29 @@ textarea{
 		flex-wrap: wrap;
 		justify-content: center;
 		flex-basis: 100%;
-		margin-bottom: -3rem
+		margin-bottom: -3rem;
 	}
-	#Bombay>section div, #Kima>section div{
+	#Bombay>section div:first-child, #Kima>section div:first-child{
 		max-width: 100%;
-		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		flex-grow: 1;
+		margin-bottom: 1rem
+
 	}
 	#Bombay>section div img:first-child, #Kima>section div img:first-child{ /*la grand image dans la page detail*/
-		max-width: 100%;
-		display: block;
+		flex-grow: 1;
+		flex-basis: 100%;
+		justify-content: space-between;
+	}
+	#Bombay>section div img:nth-child(1n+2), #Kima>section div img:nth-child(1n+2){
+		max-width: calc(100% / 4 - 1rem);
+		margin: auto;
+	}
+
+	#Bombay>section div:last-child, #Kima>section div:last-child{
+		margin-left: 1rem;
+		font-size: 20px;
 	}
 
 /********Vue Mobile Contact*********/
