@@ -257,21 +257,29 @@ main>section>a:hover{
 }
 
 #Meuble section a article div p{
-	max-width: 15%;
-	margin-left: 80%;
+	min-width: 92%;
+	min-height: 2rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #AAD5DF;
+	transition: all 1.5s;
 }
 #Meuble section a article div{
-	background-color: #AAD5DF;
  	position: absolute;
-    width: 200px;
-    bottom: 0px;
-    left:-10px;
-    transition: all 2s;
+    min-width: 100%;
+    min-height: 105%;
+    top: 0%;
+    left: -1rem;
+    display: flex;
+    align-items: flex-end;
+    flex-shrink: 0;
     opacity: 0;
+    transition: all 1.5s;
 }
 
-#Meuble section a article div:hover {	
-	left: 12px;
+#Meuble section a article div:hover  {	
+	left: 1.5rem;
 	opacity: 1;
 }
 
@@ -538,7 +546,8 @@ textarea{
 		margin: 0rem 0.2rem 0rem -0.3rem
 	}
 	#Meuble section a{
-		flex-basis: 100%;	
+		flex-basis: 100%;
+		margin: 0.5rem 0.4rem 0.5rem 0.7rem	
 	}
 	#Meuble>section>a>article{
 		min-height: 8rem;
@@ -547,15 +556,13 @@ textarea{
 	#Meuble>section>a>article>div{
 		position: static;
 		opacity: 1;
-		min-width: 100%;
-		background-color: #AAD5DF;   
+		min-width: 100%;  
 	}
-	#Meuble>section>a>article>div:hover{
 
-	}
 	#Meuble section>a article div>p{
 		display: flex;
 		justify-content: flex-end;
+		min-width: 100%;
 		color: #fff;
 	}
 
@@ -594,7 +601,7 @@ textarea{
 
 	#Bombay>section div:last-child, #Kima>section div:last-child{
 		margin-left: 1rem;
-		font-size: 20px;
+		font-size: 20px
 	}
 
 /********Vue Mobile Contact*********/
