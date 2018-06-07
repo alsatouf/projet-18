@@ -27,11 +27,12 @@
 .grid_10,
 .grid_11,
 .grid_12 {
-  margin-left: 0.5%;
-  margin-right: 0.5%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   background-color: #E7A3A3;
-  opacity: 0.5;
+  opacity: 0.2;
   display: flex;
   justify-content: center; 
-  flex-basis: 7.333333333333333%;
+  flex-basis:  calc(8.333333333333333% - 1rem);
+  
 }

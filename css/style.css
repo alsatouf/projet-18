@@ -17,6 +17,7 @@ body{
 	margin: 0px;
 }
 
+
 /*Ici toutes les pages participent aves mêmes header !*/
 header{
 	max-width: 100%;
@@ -105,6 +106,7 @@ div p a:hover{
 	text-decoration: underline;
 	color: #940C0C;
 }
+
 
 /* un main pour les differents pages Meubles et détails et Contact*/
 
@@ -378,7 +380,7 @@ iframe{/*Google map la location de l'adresse*/
 
 textarea{
 	min-width: 100%;
-	min-height: 115%;
+	min-height: 117%;
 	border:1px solid #fff;
 }
 
@@ -443,6 +445,8 @@ textarea{
 
 /***************Le Fin De Vue Bureau*************************/
 
+
+
 /***************Le Début De Vue Tablette*************************/
 @media (max-width: 860px) {
 
@@ -457,6 +461,11 @@ textarea{
 	}
 
 /****************vue detail**************/
+	
+	#Kima>section>div>img:nth-child(1n+2), #Bombay>section>div>img:nth-child(1n+2){
+		max-width: 20%;
+		margin-top: 2rem
+	} 
 
 /********Vue Tablette Contact*********/
 	#Contact>section:nth-child(2){
@@ -484,7 +493,7 @@ textarea{
 
 /***************Le Fin De Vue Tablette*************************/
 
-
+/************* Mobile First************************/
 /***************Le Début De Vue Mobile*************************/
 @media(max-width: 620px){
 
@@ -547,7 +556,7 @@ textarea{
 	}
 	#Meuble section a{
 		flex-basis: 100%;
-		margin: 0.5rem 0.4rem 0.5rem 0.7rem	
+		
 	}
 	#Meuble>section>a>article{
 		min-height: 8rem;
@@ -628,5 +637,10 @@ textarea{
 		margin: auto;
 		
 	}
+}
 
 /***************Le Fin De Vue Mobile*************************/
+
+
+
+
