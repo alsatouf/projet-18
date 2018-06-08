@@ -511,8 +511,36 @@ textarea{
 		margin:0.5rem 0rem;
 	}
 
-	header>div:nth-child(2), main>nav ul, main section a img{
+	main>nav ul, main section a img{
 		display: none;
+	}
+		header>div:nth-child(2) {
+		margin-top: 0rem
+	}
+	header>div:nth-child(2) ul{
+		margin-left: -1rem;
+		display: flex;
+		flex-basis: 100%;
+		flex-wrap: wrap;
+		
+	}
+	header>div:nth-child(2) ul li{
+		font-size: 20px;
+		font-weight: 100;
+		min-height: 2.5rem;
+		border-bottom: 1px solid #AAD5DF;
+		flex-basis: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 1s
+	}
+	header>div:nth-child(2) ul li:hover{
+		background-color: #AAD5DF;
+		cursor: pointer;
+	}
+	header>div:nth-child(2) ul li:active{
+		background-color: #00f;
 	}
 	header>div:last-child{
 		margin-top: 1rem;
