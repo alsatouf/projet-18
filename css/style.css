@@ -265,7 +265,7 @@ main>section>a:hover{
 	justify-content: flex-end;
 	align-items: center;
 	background-color: #AAD5DF;
-	transition: all 1.5s;
+	transition: all 1s;
 }
 #Meuble section a article div{
  	position: absolute;
@@ -277,7 +277,7 @@ main>section>a:hover{
     align-items: flex-end;
     flex-shrink: 0;
     opacity: 0;
-    transition: all 1.5s;
+    transition: all 1s;
 }
 
 #Meuble section a article div:hover  {	
@@ -366,21 +366,19 @@ iframe{/*Google map la location de l'adresse*/
 }
 .formulaire{ /*duv parent de formulaires pour Contact*/
 	background-color: #AAD5DF; 
+	min-width: 72.4%;
 }
 
 .formulaire>form{
 	display: flex;
 	flex-wrap: wrap;
-	flex-basis: 100%
-}
-
-.formulaire form{ /*un div sur les formulaires le nom et prenom et e-mail ...*/
+	flex-basis: 100%;
 	margin: 2%;
 }
 
 textarea{
 	min-width: 100%;
-	min-height: 117%;
+	min-height: 132%;
 	border:1px solid #fff;
 }
 
@@ -391,7 +389,6 @@ textarea{
 
 .formulaire label:nth-of-type(4){
 	font-size: small;
-	margin-left: 3rem;
 }
 
 .formulaire form>div{
@@ -406,7 +403,6 @@ textarea{
 .formulaire form>div input:nth-of-type(4){
 	margin-left: 4rem;
 }
-
 
 .formulaire input:last-child:hover, .formulaire form>div label:last-of-type:hover{
 	color: #f00;
@@ -428,10 +424,10 @@ textarea{
 	padding: 0.3rem 0.2rem;
 	background-color: #DDE4E6;
 }
-
-.formulaire{
-	min-width: 72.4%;
+.formulaire form label:nth-child(4){
+	flex-basis: 90%;
 }
+
 .formulaire input:last-child{
 	margin-left: 35%;
 	padding: 0.4rem;
@@ -514,7 +510,7 @@ textarea{
 	main>nav ul, main section a img{
 		display: none;
 	}
-		header>div:nth-child(2) {
+	header>div:nth-child(2) {
 		margin-top: 0rem
 	}
 	header>div:nth-child(2) ul{
@@ -533,7 +529,7 @@ textarea{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		transition: all 1s
+		transition: all 1s;
 	}
 	header>div:nth-child(2) ul li:hover{
 		background-color: #AAD5DF;
@@ -657,13 +653,16 @@ textarea{
 	}
 
 	.formulaire form>div label:nth-of-type(4){
+		margin-left: 0rem;
+	}
+
+	.formulaire input:nth-child(3){
 		margin-left: 0rem
 	}
 
 	.formulaire form input:last-child{
-		flex-grow: 0.5;
-		margin: auto;
-		
+		flex-grow: 1;
+		margin: auto;	
 	}
 }
 
