@@ -5,16 +5,20 @@
 }
 
 html{
-	margin: 0px;
-	font-size: 16px;
-	font-family:  "Times New Roman", Times, serif;
+	font-size: 100%;
 }
 
 body{
 	font-size: 16px;
 	font-family:  "Times New Roman", Times, serif;
+	color: #000;
 	max-width: 100%;
 	margin: 0px;
+	text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align: left;
 }
 
 
@@ -150,7 +154,6 @@ main>section>a:hover{
 /*********************** Le fin de General pour toutes les pages *******************************/
 
 /*************le Début de  page Acceuil**********/
-
 
 /***************Pour le body d'acceuil****************/
 #Acceuil>section{
