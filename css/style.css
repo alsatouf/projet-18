@@ -156,8 +156,12 @@ main>section>a:hover{
 #Acceuil>section{
 	margin-bottom: 0rem;
 }
-#Acceuil>section:first-child>img{
-	max-height: 25rem;
+#Acceuil>section:first-child{
+	background-image: url(../images/photos_home/slide.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height: 25rem
 }
 #Acceuil>section img{ /*pour les images de acceuil general*/
  	width: 100%;
@@ -265,7 +269,7 @@ main>section>a:hover{
 	justify-content: flex-end;
 	align-items: center;
 	background-color: #AAD5DF;
-	transition: all 1s;
+	transition: all 0.8s;
 }
 #Meuble section a article div{
  	position: absolute;
@@ -277,7 +281,7 @@ main>section>a:hover{
     align-items: flex-end;
     flex-shrink: 0;
     opacity: 0;
-    transition: all 1s;
+    transition: all 0.8s;
 }
 
 #Meuble section a article div:hover  {	
@@ -359,7 +363,7 @@ iframe{/*Google map la location de l'adresse*/
 	margin-bottom: 10rem
 }
 
-.info{ /*les infos nom de tel et l'adresse ...*/
+div[class="info"]{ /*les infos nom de tel et l'adresse ...*/
 	min-width: 25%;
 	margin-right: 1rem;
 	background-color: #AAD5DF;
@@ -382,7 +386,7 @@ textarea{
 	border:1px solid #fff;
 }
 
-.info>p:last-child{
+div[class="info"]>p:last-child{
 	padding: 0.1rem 5rem 0.1rem 1rem;
 	font-size: medium;
 }
@@ -417,7 +421,7 @@ textarea{
 	margin-left: 0.5rem;
 } 
 
-.info>p:first-child, .formulaire>p:first-child{
+div[class="info"]>p:first-child, .formulaire>p:first-child{
 	font-weight: 100;
 	font-size: x-large;
 	margin-top: 0rem;
@@ -467,13 +471,13 @@ textarea{
 	#Contact>section:nth-child(2){
 		flex-wrap: wrap;
 	}
-	.info, .formulaire{/*les infos adresse, tel ..., et le formulair*/
+	div[class="info"], .formulaire{/*les infos adresse, tel ..., et le formulair*/
 		min-width: 100%;
 		margin: auto;
 		margin-bottom: 1rem;
 	}
 
-	.info p:last-child{
+	div[class="info"] p:last-child{
 		min-height: 5rem;
 		font-size: 1.3rem ;	
 	}
@@ -529,14 +533,10 @@ textarea{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		transition: all 1s;
 	}
 	header>div:nth-child(2) ul li:hover{
 		background-color: #AAD5DF;
 		cursor: pointer;
-	}
-	header>div:nth-child(2) ul li:active{
-		background-color: #00f;
 	}
 	header>div:last-child{
 		margin-top: 1rem;
@@ -629,7 +629,8 @@ textarea{
 	}
 	#Bombay>section div img:nth-child(1n+2), #Kima>section div img:nth-child(1n+2){
 		max-width: calc(100% / 4 - 1rem);
-		margin: auto;
+		margin: 1rem auto;
+		max-height: 5rem
 	}
 
 	#Bombay>section div:last-child, #Kima>section div:last-child{
@@ -645,10 +646,9 @@ textarea{
 
 	.formulaire form div:first-child{ /* dans la page contact la div parents est en classe formulaire  */
 		min-width: 100%;
-		
 	}
 	.formulaire form div:nth-child(2){
-		margin: 1rem auto;
+		margin-bottom: 1.5rem;
 		min-width: 100%;
 	}
 
@@ -657,12 +657,12 @@ textarea{
 	}
 
 	.formulaire input:nth-child(3){
-		margin-left: 0rem
+		margin-left:0rem 
 	}
 
 	.formulaire form input:last-child{
 		flex-grow: 1;
-		margin: auto;	
+		margin: 1rem auto;
 	}
 }
 
